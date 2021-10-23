@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Space Mono', monospace;
+}
+
+.logo-cont {
+  width: 100%;
+  padding: 10% 0;
+  background: hsl(185, 41%, 84%);
+}
+
+.logo-img {
+  display: block;
+  margin: 0 auto;
+}
+
+.main-content-cont {
+  background-color: hsl(0, 0%, 100%);
+  border-top-left-radius: 20px;
+}
+
+.tip-output-cont {
+  background-color: hsl(183, 100%, 15%);
+}
+
+.attribution { 
+  font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
