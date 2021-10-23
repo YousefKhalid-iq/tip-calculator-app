@@ -2,43 +2,75 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
   <title>Frontend Mentor | Tip calculator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-
-  Bill
-
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <main>
+    <div class="logo-cont">
+      <img alt="logo image" class="logo-img" src="images/logo.svg">
+    </div>
+    <div class="main-content-cont">
+      <p>
+        Bill
+      </p>
+      <input type="Number" name="">
+      <p>
+        Select Tip %
+      </p>
+      <div class=tip-grid>
+        5%
+        10%
+        15%
+        25%
+        50%
+        Custom
+      </div>
+      <p>
+        Number of People
+      </p>
+      <input type="Number" name="">
+      <div class="tip-output-cont">
+        <div>
+          <div class="tip-person-cont">
+            <p class="tip-p">
+              Tip Amount
+            </p>
+            <p class="person-p">
+              / person
+            </p>
+          </div>
+          <diV>
+          </diV>
+        </div>
+        <div>
+          <div class="total-person-cont">
+            <p class="total-p">
+              Total
+            </p>
+            <p class="person-p">
+              / person
+            </p>
+          </div>
+          <div>
+          </div>
+        </div>
+        <div>
+          <button>
+            Reset
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/YousefKhalid-iq/tip-calculator-app">Yousef Khalid</a>.
+    </div>
+  </main>
 </body>
 </html>
