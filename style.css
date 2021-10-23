@@ -5,10 +5,13 @@
   font-family: 'Space Mono', monospace;
 }
 
+main {
+  background: hsl(185, 41%, 84%);
+}
+
 .logo-cont {
   width: 100%;
-  padding: 10% 0;
-  background: hsl(185, 41%, 84%);
+  padding: 50px 0 40px 0;
 }
 
 .logo-img {
@@ -16,13 +19,112 @@
   margin: 0 auto;
 }
 
-.main-content-cont {
+.main-cont {
   background-color: hsl(0, 0%, 100%);
-  border-top-left-radius: 20px;
+  border-radius: 1.5rem 1.5rem 0 0;
+}
+
+.main-content-cont {
+  width: 85%;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.bill-p, .select-tip-p, .number-of-people-p {
+  color: hsl(186, 14%, 43%);
+  font-weight: 700;
+  padding-bottom: 5px;
+}
+
+#bill-input, #number-of-people-input {
+  background-image: url(images/icon-dollar.svg);
+  background-repeat: no-repeat;
+  background-position: 4% center;
+  padding: 5px 7px 5px 15px;
+  width: 100%;
+  border: 0;
+  background-color: hsl(189, 41%, 97%);
+  border-radius: 0.3rem;
+  font-size: 1.5rem;
+  text-align: right;
+  color: hsl(183, 100%, 15%);
+  font-weight: 700;
+  margin-bottom: 10%;
+}
+
+#bill-input:focus, .custom-input:focus, #number-of-people-input  {
+  outline: none;
+}
+
+.tip-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "btn5 btn10"
+  "btn15 btn25"
+  "btn50 input";
+  width: 100%;
+  grid-gap: 10px;
+  padding: 10px 0 35px 0;
+}
+
+.btn-5, .btn-10, .btn-15, .btn-25, .btn-50 {
+  grid-area: btn5;
+  padding: 8px 22px;
+  background-color:  hsl(183, 100%, 15%);
+  border: 0;
+  border-radius: 0.3rem;
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.btn-10 {
+  grid-area: btn10;
+}
+
+.btn-15 {
+  grid-area: btn15;
+}
+
+.btn-25 {
+  grid-area: btn25;
+}
+
+.btn-50 {
+  grid-area: btn50;
+}
+
+.custom-input {
+  width: 100%;
+  grid-area: input;
+  padding-right: 15px;
+  text-align: right;
+  border: 0;
+  background-color: hsl(189, 41%, 97%);
+  border-radius: 0.3rem;
+  font-size: 1.5rem;
+  color: hsl(186, 14%, 43%);
+  font-weight: 700;
+}
+
+.custom-input[type="number"]::placeholder {
+  color: hsl(186, 14%, 43%);
+}
+
+#number-of-people-input {
+  background-image: url(images/icon-person.svg);
 }
 
 .tip-output-cont {
   background-color: hsl(183, 100%, 15%);
+  border-radius: 1rem;
+}
+
+.tip-person, .total-person {
+  width: 85%;
+  margin: 0 auto;
 }
 
 .attribution { 
