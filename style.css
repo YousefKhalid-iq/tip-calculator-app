@@ -117,18 +117,67 @@ main {
   background-image: url(images/icon-person.svg);
 }
 
+.error-msg {
+  text-align: right;
+  margin: 5px 0;
+  color: hsl(0, 86%, 57%);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.show-error-msg {  
+  opacity: 1;
+}
+
 .tip-output-cont {
   background-color: hsl(183, 100%, 15%);
   border-radius: 1rem;
+  padding: 25px 0 10px 0;
 }
 
 .tip-person, .total-person {
   width: 85%;
+  margin: 20px auto 0 auto;
+  display: flex;
+}
+
+.tip-p, .total-p {
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+}
+
+.person-p {
+  color: hsl(184, 14%, 56%);
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.tip-amount-money {
+  
+}
+
+.reset-btn-cont {
+  text-align: center;
+  margin: 30px 0 10px 0;
+}
+
+.reset-btn-cont button {
+  width: 85%;
   margin: 0 auto;
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+  border: 0;
+  font-size: 1.2rem;
+  border-radius: 0.3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 10px 0;
+  cursor: pointer;
 }
 
 .attribution { 
   font-size: 11px; text-align: center; 
+  margin-top: 20px;
 }
 
 .attribution a { 

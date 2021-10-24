@@ -20,32 +20,33 @@
         <p class="bill-p">
           Bill
         </p>
-        <input id="bill-input" type="Number" value="0" min="0">
+        <input data-bill id="bill-input" type="Number" value="0" min="0">
         <p class="select-tip-p">
           Select Tip %
         </p>
         <div class="tip-grid">
-          <button class="btn-5">
+          <button class="btn-5 tip">
             5%
           </button>
-          <button class="btn-10">
+          <button class="btn-10 tip">
             10%
           </button>
-          <button class="btn-15">
+          <button class="btn-15 tip">
             15%
           </button>
-          <button class="btn-25">
+          <button class="btn-25 tip">
             25%
           </button>
-          <button class="btn-50">
+          <button class="btn-50 tip">
              50%
           </button>
-          <input class="custom-input" type="number" name="Custom" placeholder="Custom">
+          <input data-custom class="custom-input" type="number" name="Custom" placeholder="Custom" min="1">
         </div>
         <p class="number-of-people-p">
           Number of People
         </p>
-        <input id="number-of-people-input" type="Number" value="1" min="1">
+        <div class="error-msg">Can't be zero</div>
+        <input data-people id="number-of-people-input" type="Number" value="1" min="0">
         <div class="tip-output-cont">
           <div class="tip-person">
             <div class="tip-person-cont">
@@ -56,8 +57,7 @@
                 / person
               </p>
             </div>
-            <diV>
-            </diV>
+            <div class="tip-amount-money value"></div>
           </div>
           <div class="total-person">
             <div class="total-person-cont">
@@ -68,11 +68,10 @@
                 / person
               </p>
             </div>
-            <div>
-            </div>
+            <div class="total-money value"></div>
           </div>
-          <div>
-            <button>
+          <div class="reset-btn-cont">
+            <button data-reset class="reset">
               Reset
             </button>
           </div>
@@ -85,5 +84,6 @@
     </div>
     
   </main>
+  <script src="main.js"></script>
 </body>
 </html>
