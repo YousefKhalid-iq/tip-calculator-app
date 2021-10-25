@@ -22,6 +22,7 @@ main {
 .main-cont {
   background-color: hsl(0, 0%, 100%);
   border-radius: 1.5rem 1.5rem 0 0;
+  width: 100%;
 }
 
 .main-content-cont {
@@ -139,6 +140,7 @@ main {
   width: 85%;
   margin: 20px auto 0 auto;
   display: flex;
+  justify-content: space-between;
 }
 
 .tip-p, .total-p {
@@ -152,8 +154,10 @@ main {
   font-size: 0.8rem;
 }
 
-.tip-amount-money {
-  
+.tip-amount-money, .total-money {
+  color: hsl(172, 67%, 45%);
+  font-weight: 700;
+  font-size: 1.75rem;
 }
 
 .reset-btn-cont {
@@ -175,6 +179,38 @@ main {
   cursor: pointer;
 }
 
+@media only screen and (min-width: 765px) {
+  .main-cont {
+    width: 75%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  main {
+    height: 100vh;
+  }
+
+  .flex-cont {
+    display: flex;
+    width: 900px;
+    height: 300px;
+  }
+
+  .main-cont {
+    border-radius: 1.5rem;
+  }
+
+  .section-1 {
+    width: 400px;
+    height: 280px;
+  }
+
+  .tip-output-cont {
+    width: 400px;
+    height: 280px;
+  }
+}
 .attribution { 
   font-size: 11px; text-align: center; 
   margin-top: 20px;

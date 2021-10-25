@@ -17,63 +17,67 @@
     </div>
     <div class="main-cont">
       <div class="main-content-cont">
-        <p class="bill-p">
-          Bill
-        </p>
-        <input data-bill id="bill-input" type="Number" value="0" min="0">
-        <p class="select-tip-p">
-          Select Tip %
-        </p>
-        <div class="tip-grid">
-          <button class="btn-5 tip">
-            5%
-          </button>
-          <button class="btn-10 tip">
-            10%
-          </button>
-          <button class="btn-15 tip">
-            15%
-          </button>
-          <button class="btn-25 tip">
-            25%
-          </button>
-          <button class="btn-50 tip">
-             50%
-          </button>
-          <input data-custom class="custom-input" type="number" name="Custom" placeholder="Custom" min="1">
-        </div>
-        <p class="number-of-people-p">
-          Number of People
-        </p>
-        <div class="error-msg">Can't be zero</div>
-        <input data-people id="number-of-people-input" type="Number" value="1" min="0">
-        <div class="tip-output-cont">
-          <div class="tip-person">
-            <div class="tip-person-cont">
-              <p class="tip-p">
-                Tip Amount
-              </p>
-              <p class="person-p">
-                / person
-              </p>
+        <div class="flex-cont">
+          <div class="section-1">
+            <p class="bill-p">
+              Bill
+            </p>
+            <input data-bill id="bill-input" type="Number" value="0" min="0">
+            <p class="select-tip-p">
+              Select Tip %
+            </p>
+            <div class="tip-grid">
+              <button class="btn-5 tip">
+                5%
+              </button>
+              <button class="btn-10 tip">
+                10%
+              </button>
+              <button class="btn-15 tip">
+                15%
+              </button>
+              <button class="btn-25 tip">
+                25%
+              </button>
+              <button class="btn-50 tip">
+                 50%
+              </button>
+              <input data-custom class="custom-input" type="number" name="Custom" placeholder="Custom" min="1">
             </div>
-            <div class="tip-amount-money value"></div>
+            <p class="number-of-people-p">
+              Number of People
+            </p>
+            <div class="error-msg">Can't be zero</div>
+            <input data-people id="number-of-people-input" type="Number" value="1" min="0">
           </div>
-          <div class="total-person">
-            <div class="total-person-cont">
-              <p class="total-p">
-                Total
-              </p>
-              <p class="person-p">
-                / person
-              </p>
+          <div class="tip-output-cont">
+            <div class="tip-person">
+              <div class="tip-person-cont">
+                <p class="tip-p">
+                  Tip Amount
+                </p>
+                <p class="person-p">
+                  / person
+                </p>
+              </div>
+              <div class="tip-amount-money value">$0.00</div>
             </div>
-            <div class="total-money value"></div>
-          </div>
-          <div class="reset-btn-cont">
-            <button data-reset class="reset">
-              Reset
-            </button>
+            <div class="total-person">
+              <div class="total-person-cont">
+                <p class="total-p">
+                  Total
+                </p>
+                <p class="person-p">
+                  / person
+                </p>
+              </div>
+              <div class="total-money value">$0.00</div>
+            </div>
+            <div class="reset-btn-cont">
+              <button data-reset class="reset">
+                Reset
+              </button>
+            </div>
           </div>
         </div>
         <div class="attribution">
