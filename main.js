@@ -26,9 +26,9 @@ function setBillValue() {
 
 function handleClick(event) {
 	 tipBtns.forEach(btn => {
-	 	btn.classList.remove('.')
+	 	btn.classList.remove('btn-active')
 			if(event.target.innerHTML == btn.innerHTML){
-				btn.classList.add('.');
+				btn.classList.add('btn-active');
 				tipValue = parseFloat(btn.innerHTML)/100;
 			}
 		})
