@@ -43,7 +43,7 @@ main {
   background-position: 4% center;
   padding: 5px 7px 5px 15px;
   width: 100%;
-  border: 0;
+  border: 0.1rem solid transparent;
   background-color: hsl(189, 41%, 97%);
   border-radius: 0.3rem;
   font-size: 1.5rem;
@@ -51,10 +51,12 @@ main {
   color: hsl(183, 100%, 15%);
   font-weight: 700;
   margin-bottom: 10%;
+  transition: 0.3s;
 }
 
-#bill-input:focus, .custom-input:focus, #number-of-people-input  {
+#bill-input:focus, .custom-input:focus, #number-of-people-input:focus  {
   outline: none;
+  border: 0.1rem solid hsl(172, 67%, 45%);
 }
 
 .tip-grid {
@@ -79,6 +81,12 @@ main {
   font-weight: 700;
   font-size: 1.3rem;
   cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-5:hover , .btn-10:hover , .btn-15:hover , .btn-25:hover , .btn-50:hover  {
+  background-color: hsla(172, 67%, 45%, 0.5);
+  color: hsl(183, 100%, 15%);
 }
 
 .btn-10 {
@@ -97,17 +105,31 @@ main {
   grid-area: btn50;
 }
 
+.btn-active {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+  transition: 0.3s;
+}
+
 .custom-input {
   width: 100%;
   grid-area: input;
   padding-right: 15px;
   text-align: right;
-  border: 0;
+  border: 0.1rem solid transparent;
   background-color: hsl(189, 41%, 97%);
   border-radius: 0.3rem;
   font-size: 1.5rem;
   color: hsl(186, 14%, 43%);
   font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.custom-input:focus {
+  cursor: pointer;
+  border: 0.1rem solid hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
 }
 
 .custom-input[type="number"]::placeholder {
@@ -177,24 +199,33 @@ main {
   text-transform: uppercase;
   padding: 10px 0;
   cursor: pointer;
+  transition: 0.3s;
+}
+
+.reset-btn-cont button:hover {
+  filter: brightness(130%);
 }
 
 @media only screen and (min-width: 765px) {
+  html  {
+    background: hsl(185, 41%, 84%);
+  }
+
   .main-cont {
-    width: 75%;
+    width: 700px;
     margin: 0 auto;
   }
-}
 
-@media only screen and (min-width: 1200px) {
-  main {
-    height: 100vh;
+  .main-content-cont {
+    margin: 20% auto 0 auto;
+  }
+
+  .btn-5, .btn-10, .btn-15, .btn-25, .btn-50, .custom-input {
+    width: 88px;
   }
 
   .flex-cont {
     display: flex;
-    width: 900px;
-    height: 300px;
   }
 
   .main-cont {
@@ -202,20 +233,64 @@ main {
   }
 
   .section-1 {
-    width: 400px;
-    height: 280px;
+    width: 300px;
+    margin: 0 30px 0 -20px;
+  }
+
+  .reset-btn-cont {
+    margin: 160px 0 10px 0;
   }
 
   .tip-output-cont {
+    width: 300px;
+    margin: 0 -20px 0 30px;
+  }
+
+  .tip-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "btn5 btn10 btn15"
+    "btn25 btn50 input";
+    width: 82%;
+  }
+
+  .tip-p, .total-p {
+    font-size: 1.2rem;
+  }
+
+  .person-p {
+    font-size: 1rem;
+  }
+
+  .tip-amount-money, .total-money {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .main-cont {
+    width: 900px;
+  }
+
+  .section-1, .tip-output-cont {
     width: 400px;
-    height: 280px;
+  }
+
+  .btn-5, .btn-10, .btn-15, .btn-25, .btn-50, .custom-input {
+    width: 118px;
+  }
+
+  .tip-amount-money, .total-money {
+    font-size: 2.5rem;
   }
 }
 .attribution { 
   font-size: 11px; text-align: center; 
-  margin-top: 20px;
+  margin-top: 10px;
+  color: hsl(172, 67%, 45%);
 }
 
 .attribution a { 
-  color: hsl(228, 45%, 44%); 
+  color: hsl(183, 100%, 15%); 
 }
